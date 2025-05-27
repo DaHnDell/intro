@@ -4,5 +4,5 @@ services:
     build: .
     container_name: intro-portfolio
     ports:
-      - "80:80"
+      - "82:80"
     restart: always
