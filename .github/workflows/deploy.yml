@@ -18,7 +18,16 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_KEY }}
           script: |
+            echo "========== [STEP 1] Move to project directory =========="
             cd ~/intro
+
+            echo "========== [STEP 2] Git pull =========="
             git pull origin main
+
+            echo "========== [STEP 3] Stop existing container =========="
             docker-compose down
+
+            echo "========== [STEP 4] Rebuild and run container =========="
             docker-compose up -d --build
+
+            echo "congratz! Your deployment completed successfully!"
