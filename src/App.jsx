@@ -28,6 +28,9 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <p>
+        DahnDell INTRO 입니다. 추후 추가로 게시 예정.
+      </p>
     </>
   )
 }
